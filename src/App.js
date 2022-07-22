@@ -5,6 +5,11 @@ function App() {
   const [count, setCount] = useState(0);
   const [text, setText] = useState("");
     useEffect(() => {
+      // side effect function
+    () => {
+      setTimeout(() => setCount(0), 5000);
+    },[]
+  );
         console.log("useEffect called");
     });
 
